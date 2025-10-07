@@ -1,0 +1,167 @@
+
+/*--- fonts ---*/
+
+@font-face 
+{
+    font-family: Playfair-Regular;
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face 
+{
+    font-family: Playfair-SemiBold;
+    src: url(../fonts/PlayfairDisplay-SemiBold.ttf);
+}
+
+/* Header */
+
+.header
+{
+    width: 100%;
+    height: 63px;
+    background-color: rgba(240, 248, 255, 0.10);
+    backdrop-filter: blur(3px);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-bottom: 1px solid darkgray;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.h2-header
+{
+    font-family: 'Playfair-SemiBold';
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 12px;
+    margin-left: 25px;
+}
+
+a
+{
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited
+{
+  color: #000;
+  text-decoration: none;
+}
+
+/* Main */
+
+.top-bar 
+    {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    main
+    {
+      margin-top: 100px;
+    }
+
+    
+    .logo 
+    {
+      font-size: 1.8rem;
+      letter-spacing: 1.5px;
+    }
+
+    .icon-nav 
+    {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .nav-icon 
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size: 0.9rem;
+      position: relative;
+    }
+
+    .nav-icon span:first-child 
+    {
+      font-size: 1.5rem;
+    }
+
+    .nav-icon .badge 
+    {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      background: #f28063;
+      color: white;
+      border-radius: 50%;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+    }
+
+ 
+      body
+      {
+        background-color: #f7f7f7;
+       
+        min-height: 100vh;
+        background-image: url(../img/fundo-branco-com-formas-de-linhas-luxuosas-douradas_1017-27144.png);
+        background-repeat: repeat;
+        background-position: center;
+      }
+       
+    .remove-btn:hover { color: #a12727; }
+
+    .cart-total 
+    {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #000000;
+    }
+
+    .checkout-btn 
+    {
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 0.8rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      width: 900%;
+
+    }
+
+    .checkout-btn:hover 
+    {
+      background: #c5a880;
+      color: #000;
+    }
+
+    .alinharItens
+    {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    @media (max-width: 1024px) 
+    {
+      main { flex-direction: column; align-items: center; }
+      .cart 
+      {
+        width: 90%;
+        max-height: auto;
+        position: static;
+        margin-top: 2rem;
+      }
+      .products { max-width: 100%; }
+    }
